@@ -1,0 +1,12 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "enabledManagers": ["gomod", "github-actions"],
+  "packageRules": [
+    {
+      "description": "Group Go module updates together",
+      "matchManagers": ["gomod"],
+      "groupName": "go dependencies"
+    }
+  ]
+}
